@@ -1,5 +1,4 @@
 import { defineCollection, z } from "astro:content";
-import { title } from "process";
 
 // in Tina the name is singular "post". Sorry
 // If you would like to refactor it please do

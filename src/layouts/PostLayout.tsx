@@ -1,4 +1,3 @@
-import config from "@config/config.json";
 import { dateFormat } from "@lib/utils/dateFormat";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { PostQuery, PostQueryVariables } from "tina/__generated__/types";

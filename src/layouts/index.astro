@@ -6,12 +6,12 @@ import BaseFooter from "@components/partials/footer.astro";
 
 import "../styles/custom.css";
 
-export interface Props {
+interface Props {
 	lang?: string;
 	title: string;
 }
 
-const { lang, title } = Astro.props as Props;
+const { lang, title } = Astro.props;
 ---
 
 <html lang={lang || config.site.language}>
