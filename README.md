@@ -2,17 +2,24 @@
 
 # Astro Simple blog theme
 
-simple blog is a simple blog theme for [Astro](https://docs.astro.build).
+This Astro + Tina starter is based on the [simple blog theme for Astro](https://github.com/dofbi/astro-simple-blog-theme).
 
 ![screenshot](https://raw.githubusercontent.com/10mohi6/hugo-theme-simple-blog/master/images/screenshot.png)
 
 ## Demo
 
 [View Creek on Netlify](https://astro-simple-blog.netlify.app/)
+[Live editing on Tina](/public/assets/simple-blog-with-tina-demo.mp4)
 
 ## Credits
 
-This theme is built upon a theme called [simple-blog](https://github.com/10mohi6/hugo-theme-simple-blog) for [hugo](https://gohugo.io/). Full design credit goes to [10mohi6](https://github.com/10mohi6).
+This starter is buiit on the simple blog theme for astro, which is built upon
+another theme called [simple-blog](https://github.com/10mohi6/hugo-theme-simple-blog)
+for [hugo](https://gohugo.io/). Full design credit goes to [10mohi6](https://github.com/10mohi6).
+
+If this template helped you, buy @dofbi a coffee!
+
+<a href="https://www.buymeacoffee.com/51JrBtX" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## Features
 
@@ -20,6 +27,8 @@ This theme is built upon a theme called [simple-blog](https://github.com/10mohi6
 - pagination
 - tags
 - categories
+- content management with Tina CMS
+- live editing
 
 ## 🧞 Commands
 
@@ -38,22 +47,17 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run build`   | Build your production site to `./dist/`      |
 | `pnpm run preview` | Preview your build locally, before deploying |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
-
 ## Site Configuration
 
 ```json
 {
   "site": {
-    "baseUrl": "/",
     "language": "en",
     "title": "Astro Themes",
     "description": "<your site description>",
     "copyright": "© 2024 copyright text."
   },
-  "memus": [
+  "links": [
     {
       "identifier": "about",
       "name": "About",
@@ -62,16 +66,9 @@ Feel free to check [our documentation](https://github.com/withastro/astro) or ju
   ],
   "settings": {
     "pagination": 6,
-    "blog_folder": "posts"
   }
 }
 ```
-
-## Support
-
-If this template helped you, buy me a coffee.
-
-<a href="https://www.buymeacoffee.com/51JrBtX" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## License
 
