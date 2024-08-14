@@ -9,7 +9,9 @@ This Astro + Tina starter is based on the [simple blog theme for Astro](https://
 ## Demo
 
 [View Creek on Netlify](https://astro-simple-blog.netlify.app/)
-[Live editing on Tina](/public/assets/simple-blog-with-tina-demo.mp4)
+
+
+https://github.com/user-attachments/assets/5437ab20-9a4f-47f7-8bd1-bc70a217f237
 
 ## Credits
 
