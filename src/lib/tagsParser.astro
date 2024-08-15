@@ -6,10 +6,14 @@ export const getTags = async (collection: CollectionKey) => {
 	const allPosts = await getContent(collection);
 
   const tags = allPosts.map((post) => {
-		return post.data.tags && post.data.tags.map((tag: string) => tags.push(tag.toLowerCase()));
-	});
+    const {tags} = post.data;
+    if (!tags) return;
 
-	const allTags = [...new Set(tags)];
-	return allTags;
+		return tags.map((tag: string) => tag.toLowerCase());
+  })
+  .filter(tag => tag !== undefined)
+  .flat();
+
+	return [...new Set(tags)];
 };
 ---
