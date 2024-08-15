@@ -1,6 +1,7 @@
 ---
 title: "Markdown Syntax Guide"
 date: 2022-04-29T06:51:00Z
+slug: "markdown-syntax-guide"
 description: "This article offers a sample basic Markdown syntax that can be used in Astro content files, also it shows whether basic HTML elements are decorated with css in Astro thems."
 categories: ["theme"]
 tags: ["markdown", "css", "html", "theme"]

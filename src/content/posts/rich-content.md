@@ -1,6 +1,7 @@
 ---
 title: "Rich Content"
 date: 2022-04-30T07:51:00Z
+slug: "rich-content"
 description: "Astro theme supports rich content files, which can be used to embed videos, images, and other media files."
 tags: ["shortcodes", "privacy", "design"]
 ---

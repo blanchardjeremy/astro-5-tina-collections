@@ -46,6 +46,7 @@ export default defineConfig({
           return {
             title,
             description: "So brand new in fact, it hasn't been edited yet",
+            slug: slugify(title),
             date: new Date().toISOString(),
           };
         },
@@ -65,6 +66,12 @@ export default defineConfig({
             name: "title",
             label: "Title",
             isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "slug",
+            label: "Slug",
             required: true,
           },
           {

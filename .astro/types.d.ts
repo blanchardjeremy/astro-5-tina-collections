@@ -133,49 +133,49 @@ declare module 'astro:content' {
   slug: "another-brand-new-post";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "brand-new-post.md": {
 	id: "brand-new-post.md";
   slug: "brand-new-post";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "hello-world.md": {
 	id: "hello-world.md";
   slug: "hello-world";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "markdown-syntax-guide.md": {
 	id: "markdown-syntax-guide.md";
   slug: "markdown-syntax-guide";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "placeholder-text.md": {
 	id: "placeholder-text.md";
   slug: "placeholder-text";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "rich-content.md": {
 	id: "rich-content.md";
   slug: "rich-content";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "simple-blog-with-tina.md": {
 	id: "simple-blog-with-tina.md";
   slug: "simple-blog-with-tina";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -187,5 +187,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = never;
 }
