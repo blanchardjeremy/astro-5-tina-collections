@@ -1,36 +1,33 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/13421fcf-e03c-4f6a-9ad1-1aa1ec13e0ba/deploy-status)](https://app.netlify.com/sites/astro-simple-blog/deploys) [![Run Build](https://github.com/dofbi/astro-simple-blog-theme/actions/workflows/build-test.yml/badge.svg)](https://github.com/dofbi/astro-simple-blog-theme/actions/workflows/build-test.yml)
 
-# Astro Simple blog theme
+# Astro Simple blog theme + Tina CMS
 
 This Astro + Tina starter is based on the [simple blog theme for Astro](https://github.com/dofbi/astro-simple-blog-theme).
 
 ![screenshot](https://raw.githubusercontent.com/10mohi6/hugo-theme-simple-blog/master/images/screenshot.png)
 
-## Demo
+## Live editing demo
 
-[View Creek on Netlify](https://astro-simple-blog.netlify.app/)
+![Live editing demo](/public/assets/simple-blog-with-tina.mp4)
 
 
 https://github.com/user-attachments/assets/5437ab20-9a4f-47f7-8bd1-bc70a217f237
 
 ## Credits
 
-This starter is buiit on the simple blog theme for astro, which is built upon
-another theme called [simple-blog](https://github.com/10mohi6/hugo-theme-simple-blog)
-for [hugo](https://gohugo.io/). Full design credit goes to [10mohi6](https://github.com/10mohi6).
-
-If this template helped you, buy @dofbi a coffee!
+This is built upon [the simple blog theme for Astro](https://github.com/dofbi/astro-simple-blog-theme).
+Many thanks to @dofbi! If this template helped you, buy him a coffee.
 
 <a href="https://www.buymeacoffee.com/51JrBtX" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## Features
 
 - content
-- pagination
+- pagination (improved)
 - tags
 - categories
-- content management with Tina CMS
-- live editing
+- content management with Tina
+- live editing with Tina
 
 ## 🧞 Commands
 

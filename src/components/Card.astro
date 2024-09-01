@@ -16,17 +16,14 @@ const { post, url } = Astro.props;
 		<div class="card-body pt-5 px-5 pb-4 text-center">
 			{
 				post.data.categories &&
-					post.data.categories.map((categorie: string) => (
-						<a
-							href={`/${url}`}
-							class="d-inline-block link-cta mb-4 text-uppercase"
-						>
+					post.data.categories.map((categorie: any) => (
+						<a href={url} class="d-inline-block link-cta mb-4 text-uppercase">
 							{categorie}
 						</a>
 					))
 			}
 			<h2 class="card-title mb-4">
-				<a class="stretched-link" href={`${url}${post.data.slug}`}
+				<a class="stretched-link" href={`${url}${post.slug}`}
 					>{post.data.title}</a
 				>
 			</h2>
@@ -37,8 +34,8 @@ const { post, url } = Astro.props;
 			<p>
 				{
 					post.data.tags &&
-						post.data.tags.map((tag: string) => (
-							<a href={`/tag/${tag}/`} class="link-tag text-dark">
+						post.data.tags.map((tag: any) => (
+							<a href={`tag/${tag}/`} class="link-tag text-dark">
 								#{tag}
 							</a>
 						))
