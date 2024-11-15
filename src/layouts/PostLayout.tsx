@@ -1,7 +1,7 @@
 import { dateFormat } from "@lib/utils/dateFormat";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { PostQuery, PostQueryVariables } from "tina/__generated__/types";
-import { useTina } from "tinacms/dist/react";
+import { useTina, tinaField } from "tinacms/dist/react";
 
 interface Props {
 	tinaProps: {
@@ -35,8 +35,8 @@ export default function PostLayout({ tinaProps }: Props) {
 									{categorie}
 								</a>
 							))}
-						<h1 className="mb-4 text-center">{post.title}</h1>
-						<p className="small mb-5 text-center">
+						<h1 className="mb-4 text-center" data-tina-field={tinaField(post, 'title')}>{post.title}</h1>
+						<p className="small mb-5 text-center" data-tina-field={tinaField(post, 'date')}>
 							<span className="text-uppercase">{dateFormat(post.date)}</span>
 						</p>
 					</div>
