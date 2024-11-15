@@ -6,7 +6,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "npx tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npx tinacms dev -c \"astro build\"",
     "preview": "astro preview",
     "format": "prettier --write src/"
   },

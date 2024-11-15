@@ -1,36 +1,28 @@
 ---
 import Layout from "@layouts/index.astro";
 import PostLayout from "@layouts/PostLayout.tsx";
-
+import { getCollection } from "astro:content";
+import type { PostQuery, PostQueryVariables } from "tina/__generated__/types";
 import client from "tina/__generated__/client";
 
 export async function getStaticPaths() {
-	const postsResponse = await client.queries.postConnection();
-	const postsFromTina = postsResponse.data.postConnection.edges!.map((post) => {
+	const posts = await getCollection("posts");
+
+	return posts.map((post) => {
 		return {
-			params: {
-				relativePath: post!.node!._sys.relativePath,
+			params: { slug: post.data.slug },
+			props: {
+				title: post.data.title,
+				getTinaProps: async () => client.queries.post({ relativePath: post.data.tinaInfo.relativePath }),
 			},
-		};
-	});
-
-	const postsPages = await Promise.all(
-		postsFromTina.map(async ({ params }) => {
-			return await client.queries.post({ relativePath: params.relativePath });
-		})
-	);
-
-	return postsPages.map((post) => {
-		return {
-			params: { slug: post.data.post._sys.filename },
-			props: { tinaProps: { ...post } },
 		};
 	});
 }
 
-const { tinaProps } = Astro.props;
+const { title, getTinaProps } = Astro.props;
+const tinaProps = await getTinaProps()
 ---
 
-<Layout title={tinaProps.data.post.title}>
+<Layout title={title}>
 	<PostLayout client:tina tinaProps={tinaProps} />
 </Layout>
