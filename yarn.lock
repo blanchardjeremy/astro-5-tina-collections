@@ -2201,7 +2201,7 @@
     typescript "^5.6.3"
     zod "^3.23.8"
 
-"@tinacms/cli@^1.5.53":
+"@tinacms/cli@^1.6.12":
   version "1.6.12"
   resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-1.6.12.tgz#f783b619f9cc16f44124624250a42519d635a032"
   integrity sha512-Jhb3em1LaMZg0pvcb+09NM8sCMDFJhSNK3IdaJV9XMHNTf5zxVty0DalCcmAfeiVHS7i5kfb1bZ+fJKmDR0HMw==
@@ -9056,7 +9056,7 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-tinacms@2.5.0, tinacms@^2.1.1:
+tinacms@2.5.0, tinacms@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.5.0.tgz#fe4d161b74f71254c316ff4b0f571299eabf9c36"
   integrity sha512-LUXtMRQuWSb3/G3CzYlX99rWAXs6vDxHwBrtPrW9ZVQxU69m32xlAPv3Ok75+dgGF5vOHKgSkoRREERJKdvJlA==

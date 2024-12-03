@@ -10,7 +10,7 @@
     "format": "prettier --write src/"
   },
   "devDependencies": {
-    "@tinacms/cli": "^1.5.53",
+    "@tinacms/cli": "^1.6.12",
     "@types/node": "^22.2.0",
     "astro": "5.0.2",
     "prettier": "^3.3.3",
@@ -23,7 +23,7 @@
     "astro-tina": "^0.1.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^2.1.1"
+    "tinacms": "^2.5.0"
   },
   "packageManager": "yarn@1.22.22"
 }
