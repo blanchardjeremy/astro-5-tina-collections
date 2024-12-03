@@ -12,7 +12,7 @@
     ],
     "scripts": {
       "dev": [
-        "pnpm run dev"
+        "yarn run dev"
       ]
     }
   }

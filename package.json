@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "dev": "npx tinacms dev -c \"astro dev\"",
     "start": "astro dev",
     "build": "npx tinacms dev -c \"astro build\"",
@@ -13,12 +12,12 @@
   "devDependencies": {
     "@tinacms/cli": "^1.5.53",
     "@types/node": "^22.2.0",
-    "astro": "5.0.0-beta.8",
+    "astro": "5.0.2",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1"
   },
   "dependencies": {
-    "@astrojs/react": "^3.6.2",
+    "@astrojs/react": "^4.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro-tina": "^0.1.2",
@@ -26,5 +25,5 @@
     "react-dom": "^18.3.1",
     "tinacms": "^2.1.1"
   },
-  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
+  "packageManager": "yarn@1.22.22"
 }
