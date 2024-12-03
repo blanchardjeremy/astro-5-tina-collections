@@ -7,6 +7,6 @@ import tina from "astro-tina";
 export default defineConfig({
   integrations: [react(), tina()],
   redirects: {
-    "/tag/[tag]": "/tag/[tag]/1",
+    // "/tag/[tag]": "/tag/[tag]/1",
   },
 });

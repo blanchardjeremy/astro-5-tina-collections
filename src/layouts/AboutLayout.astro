@@ -4,7 +4,7 @@ import { dateFormat } from "@lib/utils/dateFormat";
 import Layout from "./index.astro";
 
 const { frontmatter } = Astro.props;
-const { title, date } = frontmatter;
+const { title, date, categories = [], tags = [] } = frontmatter;
 ---
 
 <Layout title={title}>
@@ -14,12 +14,9 @@ const { title, date } = frontmatter;
         {
           categories &&
             categories.map((categorie: any) => (
-              <a
-                href={`categories/${categorie}/`}
-                class="d-inline-block link-cta mb-4 text-uppercase"
-              >
+              <span class="link-tag text-dark">
                 {categorie}
-              </a>
+              </span>
             ))
         }
         <h1 class="mb-4 text-center">{title}</h1>
@@ -40,12 +37,9 @@ const { title, date } = frontmatter;
               {
                 tags &&
                   tags.map((tag: any) => (
-                    <a
-                      href={`tag/${tag}/`}
-                      class="link-tag text-dark"
-                    >
+                    <span class="link-tag text-dark">
                       #{tag}
-                    </a>
+                    </span>
                   ))
               }
             </p>

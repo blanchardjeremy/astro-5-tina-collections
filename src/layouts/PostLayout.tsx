@@ -12,11 +12,7 @@ interface Props {
 }
 
 export default function PostLayout({ tinaProps }: Props) {
-	const { data } = useTina({
-		variables: tinaProps.variables,
-		data: tinaProps.data,
-		query: tinaProps.query,
-	});
+	const { data } = useTina(tinaProps);
 
 	const { post } = data;
 
@@ -27,13 +23,9 @@ export default function PostLayout({ tinaProps }: Props) {
 					<div className="col-lg-10">
 						{post.categories &&
 							post.categories.map((categorie) => (
-								<a
-									href={`/categories/${categorie}/`}
-									className="d-inline-block link-cta mb-4 text-uppercase"
-									key={categorie}
-								>
+								<span className="link-tag text-dark">
 									{categorie}
-								</a>
+								</span>
 							))}
 						<h1 className="mb-4 text-center" data-tina-field={tinaField(post, 'title')}>{post.title}</h1>
 						<p className="small mb-5 text-center" data-tina-field={tinaField(post, 'date')}>
@@ -47,7 +39,7 @@ export default function PostLayout({ tinaProps }: Props) {
 				<div className="container">
 					<div className="row justify-content-center">
 						<div className="col-lg-8">
-							<article className="pb-2">
+							<article className="pb-2" data-tina-field={tinaField(post, 'body')}>
 								<TinaMarkdown content={post.body}></TinaMarkdown>
 
 								<p className="mt-5 text-center">
@@ -55,14 +47,10 @@ export default function PostLayout({ tinaProps }: Props) {
 										<span className="text-secondary">Tagged: </span>
 									)}
 									{post.tags &&
-										post.tags.map((tag) => (
-											<a
-												href={`/tag/${tag}/`}
-												className="link-tag text-dark"
-												key={tag}
-											>
-												#{tag}
-											</a>
+										post.tags.map((tag, index) => (
+											<span key={tag}>
+												<span className="link-tag text-dark">#{tag}</span>
+											</span>
 										))}
 								</p>
 							</article>
