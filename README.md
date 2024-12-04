@@ -17,7 +17,7 @@ Original features:
 Tweaks I've added:
 - switched to yarn
 - updated to Tina 2.5.0 and Astro 5.0.2
-- removed tags and categories
+- removed tags and categories (so I could get `yarn build` working without errors)
 - removed some unused files
 
 
