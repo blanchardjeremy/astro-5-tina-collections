@@ -12,7 +12,7 @@
     ],
     "scripts": {
       "dev": [
-        "yarn run dev"
+        "yarn dev"
       ]
     }
   }
