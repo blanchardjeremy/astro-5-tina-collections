@@ -15,6 +15,7 @@ Original features:
 
 
 Tweaks I've added:
+- Added conditional rendering of `client:tina` so that Astro islands only load in development, not production
 - switched to yarn
 - updated to Tina 2.5.0 and Astro 5.0.2
 - removed tags and categories (so I could get `yarn build` working without errors)

@@ -23,7 +23,7 @@ export default function PostLayout({ tinaProps }: Props) {
 					<div className="col-lg-10">
 						{post.categories &&
 							post.categories.map((categorie) => (
-								<span className="link-tag text-dark">
+								<span key={categorie} className="link-tag text-dark">
 									{categorie}
 								</span>
 							))}
@@ -47,7 +47,7 @@ export default function PostLayout({ tinaProps }: Props) {
 										<span className="text-secondary">Tagged: </span>
 									)}
 									{post.tags &&
-										post.tags.map((tag, index) => (
+										post.tags.map((tag) => (
 											<span key={tag}>
 												<span className="link-tag text-dark">#{tag}</span>
 											</span>
