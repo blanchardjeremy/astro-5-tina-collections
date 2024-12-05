@@ -19,10 +19,12 @@ export async function getStaticPaths() {
 	});
 }
 
+
 const { title, getTinaProps } = Astro.props;
 const tinaProps = await getTinaProps()
 ---
 
 <Layout title={title}>
-	<PostLayout client:tina tinaProps={tinaProps} />
+	{import.meta.env.NODE_ENV === 'production' ? <PostLayout tinaProps={tinaProps}/> : <PostLayout client:tina tinaProps={tinaProps}  />}
+	<p>{import.meta.env.NODE_ENV}</p>
 </Layout>

@@ -2,7 +2,7 @@
 .astro
 
 # build output
-dist/
+dist*
 .output/
 
 # dependencies

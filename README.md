@@ -4,7 +4,7 @@
 ## Background
 See [this comment from @kauhat](https://github.com/tinacms/tinacms/issues/4497#issuecomment-2484316664) discussing Astro + Tina visual editing. This is a fork of the `develop` branch of kauhat's repo: https://github.com/kauhat/astro-5-tina-collections/tree/develop. 
 
-
+c
 ## Features:
 
 Original features:
