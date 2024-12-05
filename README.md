@@ -2,9 +2,9 @@
 
 
 ## Background
-See [this comment from @kauhat](https://github.com/tinacms/tinacms/issues/4497#issuecomment-2484316664) discussing Astro + Tina visual editing. This is a fork of the `develop` branch of kauhat's repo: https://github.com/kauhat/astro-5-tina-collections/tree/develop. 
+* This is a fork of the `develop` branch of kauhat's repo: https://github.com/kauhat/astro-5-tina-collections/tree/develop (mentioned in [this thread](https://github.com/tinacms/tinacms/issues/4497#issuecomment-2484316664))
+* See [this discussion](https://discord.com/channels/830184174198718474/1019713903481081876/threads/1297240670121099405) in the Astro discord server about conditional `client:tina` application.
 
-c
 ## Features:
 
 Original features:

@@ -1,8 +1,8 @@
 ---
 import Layout from "@layouts/index.astro";
 import PostLayout from "@layouts/PostLayout.tsx";
+import TinaWrapper from "@components/TinaWrapper.tsx";
 import { getCollection } from "astro:content";
-import type { PostQuery, PostQueryVariables } from "tina/__generated__/types";
 import client from "tina/__generated__/client";
 
 export async function getStaticPaths() {
@@ -24,5 +24,8 @@ const tinaProps = await getTinaProps()
 ---
 
 <Layout title={title}>
-	{import.meta.env.NODE_ENV === 'production' ? <PostLayout tinaProps={tinaProps}/> : <PostLayout client:tina tinaProps={tinaProps}  />}
+	{import.meta.env.NODE_ENV === 'production' 
+		? <PostLayout tinaProps={tinaProps} />
+		: <TinaWrapper><PostLayout tinaProps={tinaProps} /></TinaWrapper>
+	}
 </Layout>
